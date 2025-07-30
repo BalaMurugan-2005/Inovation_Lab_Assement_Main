@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3: Callback Functions & Scope</title>
+</head>
+<body>
+  <h2>Task 3: Callback Functions & Scope</h2>
+
+  <h4>Callback Function Example:</h4>
+  <button onclick="beginTask()">Start Task with Callback</button>
+
+  <h4>Scope Example (Check Console):</h4>
+  <button onclick="exploreScopes()">Check Variable Scopes</button>
+
+  <p> (Right-click > Inspect > Console)</p>
+
+  <script>
+    function taskCompleted() {
+      console.log("Task is completed!");
+    }
+
+    function beginTask() {
+      console.log("Task is beginning...");
+      setTimeout(taskCompleted, 1000); // Callback function after 1 second
+    }
+
+    function exploreScopes() {
+      var globalVariable = "This is global using var";
+      let blockScopedLet = "This is scoped within a block using let";
+      const blockScopedConst = "This is scoped within a block using const";
+
+      if (true) {
+        var insideIfVar = "Inside if-block (var)";
+        let insideIfLet = "Inside if-block (let)";
+        const insideIfConst = "Inside if-block (const)";
+        console.log("Block (let):", insideIfLet);
+        console.log("Block (const):", insideIfConst);
+      }
+
+      console.log("Outside block (var):", insideIfVar); // This will work because 'var' is function-scoped
+    }
+  </script>
+</body>
+</html>

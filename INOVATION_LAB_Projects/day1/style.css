@@ -1,0 +1,8 @@
+.calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calc Button{
+    margin-top: 20px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Grade Report</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Student Grade Report</h1>
+    <div id="inputSection">
+      <label>How many students?</label>
+      <input type="number" id="studentCount" min="1">
+      <button onclick="generateStudentInputs()">Start</button>
+    </div>
+    <form id="studentForm" style="display:none;">
+      <div id="studentInputs"></div>
+      <button type="submit">Get Grades</button>
+    </form>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
