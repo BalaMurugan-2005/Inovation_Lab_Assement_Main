@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2: Function Expressions & Arrow Functions</title>
+</head>
+<body>
+  <h2>Task 2: Function Expressions & Arrow Functions</h2>
+
+  <!-- Function Expression Button -->
+  <h4>Function Expression:</h4>
+  <button onclick="sayHi()">Call sayHi()</button>
+
+  <!-- Arrow Function Button -->
+  <h4>Arrow Function:</h4>
+  <button onclick="arrowGreet()">Call arrowGreet()</button>
+
+  <!-- Arrow Function with Parameters -->
+  <h4>Arrow Function - Sum:</h4>
+  <button onclick="sumArrow(7, 8)">Call sumArrow(7, 8)</button>
+
+  <p>👉 Right-click > Inspect > Console to see the output</p>
+
+  <script>
+    // Function Expression
+    const sayHi = function () {
+      console.log("Hi! This is a function expression.");
+    };
+
+    // Arrow Function
+    const arrowGreet = () => {
+      console.log("Hello from an arrow function!");
+    };
+
+    // Arrow Function with Parameters
+    const sumArrow = (x, y) => {
+      const result = x + y;
+      console.log(`Sum using arrow function: ${result}`);
+      return result;
+    };
+  </script>
+</body>
+</html>
