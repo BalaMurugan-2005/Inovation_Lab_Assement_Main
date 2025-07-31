@@ -1,0 +1,16 @@
+console.log("Random number between 0 and 1:", Math.random());
+console.log("Rounded down value of 9.8:", Math.floor(9.8));
+console.log("Rounded up value of 2.2:", Math.ceil(2.2));
+console.log("Greatest among 8, 14, 6:", Math.max(8, 14, 6));
+console.log("Smallest among 8, 14, 6:", Math.min(8, 14, 6));
+console.log("Square of 5:", Math.pow(5, 2));         
+console.log("Square root of 49:", Math.sqrt(49));   
+console.log("-----------");
+let student = "bala murugan";
+console.log("Uppercase:", student.toUpperCase());
+console.log("Lowercase:", student.toLowerCase());
+console.log("First 2 letters:", student.slice(0, 2));
+console.log("Does it include 'mur'?", student.includes("mur"));
+console.log("Replace 'bala' with 'siva':", student.replace("bala", "siva"));
+console.log("Length of name:", student.length);       
+console.log("Split by space:", student.split(" "));   
