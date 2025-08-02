@@ -1,0 +1,14 @@
+1. What does Math.floor(4.7) return?
+It returns 4, because it just drops the decimal and goes down.
+
+2. How to convert a string to uppercase?
+Use .toUpperCase(), like "hello".toUpperCase() gives "HELLO".
+
+3. What is the difference between forEach and map?
+forEach runs code for each item, map does that and gives back a new array.
+
+4. What does for-in iterate over in arrays?
+It loops through the indexes (like 0, 1, 2), not the actual values.
+
+5. Predict the output of code using map() on an array.
+If you do [1, 2, 3].map(x => x * 2), it gives [2, 4, 6]

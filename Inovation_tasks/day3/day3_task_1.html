@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 1: Defining and Calling Functions</title>
+</head>
+<body>
+  <h2>Task 1: Defining and Calling Functions</h2>
+  <!-- Fixed Parameter Function -->
+  <h4>Fixed Parameter Function:</h4>
+  <button onclick="greetUser()">Call greetUser()</button>
+  <!-- Function using arguments object -->
+  <h4>Function using <code>arguments</code> object:</h4>
+  <button onclick="sumArguments(10, 20, 30)">Call sumArguments(10, 20, 30)</button>
+  <!-- Function using rest operator -->
+  <h4>Function using <code>...rest</code> operator:</h4>
+  <button onclick="sumRest(5, 15, 25, 35)">Call sumRest(5, 15, 25, 35)</button>
+  <script>
+    // Fixed parameter function
+    function greetUser() {
+      const message = "Hello, welcome to JavaScript functions!";
+      console.log(message);
+    }
+    // Function using 'arguments' object (old-style)
+    function sumArguments() {
+      let total = 0;
+      for (let i = 0; i < arguments.length; i++) {
+        total += arguments[i];
+      }
+      console.log("Sum using 'arguments' object:", total);
+    }
+    // Function using '...rest' operator (modern)
+    function sumRest(...numbers) {
+      const total = numbers.reduce((sum, num) => sum + num, 0);
+      console.log("Sum using '...rest' operator:", total);
+    }
+  </script>
+</body>
+</html>

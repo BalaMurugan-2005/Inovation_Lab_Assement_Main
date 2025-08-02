@@ -1,0 +1,11 @@
+1. What is the difference between let and var?
+let is newer and safer — it stays inside the block (like inside {}), but var kinda leaks out (function-scoped).
+
+2. What will be the output of 5 + '5' in JavaScript?
+It gives "55" — because JavaScript turns the number into a string and sticks them together.
+
+3. Which operator is used for strict equality comparison?
+It’s === — it checks both value and type, not just if they look the same.
+
+4. What does the ternary operator do?
+It’s like a quick if-else — it picks between two things based on a condition.

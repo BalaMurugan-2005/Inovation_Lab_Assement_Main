@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 1: Advanced Array Methods</title>
+</head>
+<body>
+  <h2>Open Console to See Output</h2>
+  <button onclick="runArrayTasks()">Run Task 1</button>
+
+  <script>
+    function runArrayTasks() {
+      const numbers = [5, 12, 8, 20, 3, 15];
+
+      const greaterThanTen = numbers.filter(num => num > 10);
+      console.log("Numbers > 10:", greaterThanTen);
+
+      const total = numbers.reduce((sum, num) => sum + num, 0);
+      console.log("Sum of numbers:", total);
+
+      const product = numbers.reduce((mul, num) => mul * num, 1);
+      console.log("Product of numbers:", product);
+
+      const words = ["Hello", "World", "From", "JS"];
+      const sentence = words.reduce((acc, word) => acc + " " + word);
+      console.log("Sentence:", sentence);
+
+      const someNumbers = numbers.slice(1, 4);
+      console.log("Slice (1 to 3):", someNumbers);
+
+      const changedNumbers = [...numbers];
+      changedNumbers.splice(2, 2, 99, 100);
+      console.log("After splice:", changedNumbers);
+
+      const cloneArray = [...numbers];
+      console.log("Cloned Array:", cloneArray);
+
+      const moreNumbers = [25, 30];
+      const mergedArray = [...numbers, ...moreNumbers];
+      console.log("Merged Array:", mergedArray);
+    }
+  </script>
+</body>
+</html>
