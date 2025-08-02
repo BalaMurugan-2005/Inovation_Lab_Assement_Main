@@ -1,0 +1,158 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 20px 0;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-bar h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00adb5;
+}
+
+/* Profile Section */
+.profile-section {
+  background-color: #fff;
+  padding: 40px 0;
+  border-bottom: 2px solid #eee;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00adb5;
+}
+
+.profile-info h2 {
+  font-size: 2em;
+  color: #222;
+}
+
+.profile-info p {
+  color: #555;
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #00adb5;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Project Cards */
+.project-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 6px solid #00adb5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  color: #1a1a2e;
+}
+
+/* Contact Form */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #00adb5;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #007d8b;
+}
+
+#formMessage {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background: #1a1a2e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
