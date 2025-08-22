@@ -1,0 +1,31 @@
+const colors = ["red", "green", "blue", "yellow"];
+const [firstColor, secondColor, ...otherColors] = colors;
+console.log(firstColor, secondColor, otherColors);
+
+const student = { name: "John", age: 20, course: "CS" };
+const { name, age, course } = student;
+console.log(name, age, course);
+
+const employee = {
+  id: 101,
+  personal: { fname: "dhoni", lname: "asta" },
+  job: { title: "Developer", department: "IT" }
+};
+const { personal: { fname, lname }, job: { title, department }, salary = 50000 } = employee;
+console.log(fname, lname, title, department, salary);
+
+console.log(student.name);
+console.log(employee.job.title);
+
+console.log(student["course"]);
+console.log(employee["job"]["department"]);
+
+const car = { brand: "Toyota", model: "Camry", year: 2022 };
+
+for (let key in car) {
+  console.log(key, car[key]);
+}
+
+Object.keys(car).forEach(key => console.log(key, car[key]));
+
+Object.entries(car).forEach(([key, value]) => console.log(key, value));

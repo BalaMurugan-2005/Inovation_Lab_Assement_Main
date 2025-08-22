@@ -1,0 +1,22 @@
+const person1 = { name: "asta" };
+const person2 = { name: "kevin" };
+
+function greet(greeting, punctuation) {
+  console.log(`${greeting}, ${this.name}${punctuation}`);
+}
+
+greet.call(person1, "Hello", "!");
+greet.apply(person2, ["Hi", "?"]);
+
+const boundGreet = greet.bind(person1, "Hey");
+boundGreet("!!!");
+
+function introduce(city, country) {
+  console.log(`I am ${this.name} from ${city}, ${country}`);
+}
+
+introduce.call(person1, "New York", "USA");
+introduce.apply(person2, ["London", "UK"]);
+
+const boundIntroduce = introduce.bind(person2, "Paris", "France");
+boundIntroduce();

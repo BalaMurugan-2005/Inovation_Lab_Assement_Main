@@ -1,0 +1,26 @@
+const users = [
+  { id: 1, name: "dhoni", address: { city: "New York", zip: 10001 } },
+  { id: 2, name: "ben", address: { city: "Chicago", zip: 60601 } }
+];
+console.log(users[0].address.city);
+console.log(users[1].address.zip);
+
+function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+console.log(sum(10, 20, 30));
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const mergedArray = [...arr1, ...arr2];
+console.log(mergedArray);
+
+const product = { id: 101, name: "Laptop", price: 50000 };
+const clonedProduct = { ...product };
+console.log(clonedProduct);
+
+function displayUser({ name, address: { city } }) {
+  console.log(`${name} lives in ${city}`);
+}
+displayUser(users[0]);
+displayUser(users[1]);
