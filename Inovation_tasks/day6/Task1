@@ -8,7 +8,7 @@ console.log(name, age, course);
 
 const employee = {
   id: 101,
-  personal: { fname: "dhoni", lname: "asta" },
+  personal: { fname: "dhoni", lname: "mahendhra" },
   job: { title: "Developer", department: "IT" }
 };
 const { personal: { fname, lname }, job: { title, department }, salary = 50000 } = employee;
@@ -29,3 +29,4 @@ for (let key in car) {
 Object.keys(car).forEach(key => console.log(key, car[key]));
 
 Object.entries(car).forEach(([key, value]) => console.log(key, value));
+
