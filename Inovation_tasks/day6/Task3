@@ -1,4 +1,4 @@
-const person1 = { name: "asta" };
+const person1 = { name: "bala" };
 const person2 = { name: "kevin" };
 
 function greet(greeting, punctuation) {
@@ -20,3 +20,4 @@ introduce.apply(person2, ["London", "UK"]);
 
 const boundIntroduce = introduce.bind(person2, "Paris", "France");
 boundIntroduce();
+
