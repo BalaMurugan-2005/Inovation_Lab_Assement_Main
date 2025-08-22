@@ -1,0 +1,17 @@
+How do you destructure an object with nested properties?
+By unpacking values directly from inside another object using curly braces with the property path.
+
+When should you use bracket notation over dot notation?
+When the property name is stored in a variable or has spaces/special characters.
+
+What methods can you use to iterate through object properties?
+for...in, Object.keys(), Object.values(), and Object.entries().
+
+Explain the rest parameters vs the spread operator with examples.
+Rest gathers multiple values into one variable; spread expands values out of an array or object.
+
+How does call() differ from apply()?
+call() passes arguments individually, while apply() passes them as an array.
+
+What does bind() do to a function?
+It creates a new function with a fixed this value that cannot be changed when called.
