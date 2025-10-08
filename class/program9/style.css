@@ -1,0 +1,16 @@
+body{
+    margin: 0;    
+}
+.carousel img{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+.carousel .btn{
+    position: absolute;
+    top : 50%;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
